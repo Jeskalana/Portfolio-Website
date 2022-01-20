@@ -1,0 +1,29 @@
+<--w3.css card with header and footer in blue and a 4px box shadow-->
+<div class="w3-card-4">
+
+<header class="w3-container w3-blue">
+  <h1>Header</h1>
+</header>
+
+<div class="w3-container">
+  <p>Lorem ipsum...</p>
+</div>
+
+<footer class="w3-container w3-blue">
+  <h5>Footer</h5>
+</footer>
+
+</div>
+
+<--Hover Effect on Card in Green-->
+<div class="w3-green w3-hover-shadow w3-center">
+  <p>Hover over me!</p>
+</div>
+
+<--Footer Social Icons-->
+<i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>

@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+#title {
+	align-content: center;
+}
+
+header {
+	align-content: center;
+	text-align: center;
+	background-color: antiquewhite;
+}
+
+#img-div {
+	align-content: space-around;
+}
+
+#image {
+	align-self: center;
+}
+#main {
+	text-align: center;
+	background-color: aquamarine;
+}
+ul {
+	align-items: center;
+}
+li {
+	align-content: center;
+}
+@media (min-width: 420px)
+{
+	#img-div {
+		align-content: center;
+		text-align: center;
+	}
+}
+	
+@media (min-width: 720px)
+	{
+	#img-div {
+		align-content: center;
+		text-align: center;
+	}
+}
+	
+@media (min-width 960px)
+	{
+	#img-div {
+		align-content: center;
+		text-align: center;
+	}
+}

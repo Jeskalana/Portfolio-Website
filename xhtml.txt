@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/TR/xhtml1" xml:lang="en" lang="en">
+   <head>
+      <title>Every document must have a title</title>
+   </head>
+	
+   <body>
+      ...your content goes here...
+   </body>
+</html>
+
+*Must always have the <html></html> tags.
+
+There are 3 types of <!DOCTYPE> declarations for XHTML:
+
+1.Strict: (For when you want to avoid using xhtml attributes and CSS attributes.)
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+2. Transitional: (For when you plan on usng CSS and XHTML Attributes)
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+3. Frameset: (For when you want to use an HTML special Frameset in the Browser window)
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+XHTML 1.1:
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd" xml:lang="en">
+	
+   <head>
+      <title>This is the document title</title>
+   </head>
+	
+   <body>
+      <p>Moved to <a href="http://example.org/">example.org</a>.</p>
+   </body>
+	
+</html>
+
+*Requires everthing the same as XHTML 1.0 but has depreciated some tags in favor of CSS.
+The document MUST conform to the constraints expressed in XHTML 1.1 Document Type Definition.
+In XHTML 1.1:
+The root element of the document MUST be <html>.
+
+The root element of the document MUST designate the XHTML namespace using the xmlns attribute.
+
+The root element MAY also contain a schema location attribute as defined in the XML Schema.
+
+The most significant is the removal of features that were deprecated.
+
+The changes can be summarized as follows −
+
+On every element, the lang attribute has been removed in favor of the xml:lang attribute.
+
+On the <a> and <map> elements, the name attribute has been removed in favor of the id attribute.
+
+The ruby collection of elements has been added.
+
+
+
+You can convert your existing HTML website into XHTML website:
+
+Let us go through some important steps. To convert your existing document, you must first decide which DTD you are going to adhere to, and include document type definition at the top of the document.
+
+Make sure you have all other required elements. These include a root element <html> that indicates an XML namespace, a <head> element, a <title> element contained within the <head> element, and a <body> element.
+
+Convert all element keywords and attribute names to lowercase.
+
+Ensure that all attributes are in a name="value" format.
+
+Make sure that all container elements have closing tags.
+
+Place a forward slash inside all standalone elements. For example, rewrite all <br> elements as <br />.
+
+Designate client-side script code and style sheet code as CDATA sections.

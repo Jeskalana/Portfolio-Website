@@ -1,0 +1,53 @@
+
+<?php
+
+
+if($_POST["message"]) {
+
+
+mail("jeskalana@missesolsen.one", "My Art Contact Form Input.",
+
+
+$_POST["This is my contact info and message"]. "From: an@email.address");
+
+
+}
+
+
+?>
+
+<!DOCTYPE html>... ..
+
+
+
+
+
+
+
+...<body>
+
+<form action=”mailto:jeskalana@missesolsen.one”
+
+
+method=”POST” action="https://getform.io/f/464b8131-b17f-427a-920c-e1e7afdedc0a"
+
+
+enctype=”multipart/form-data”
+
+
+name=”EmailForm”>
+
+
+Name:<br>
+
+
+<input type=”text” size=”19″ name=”ContactName”><br><br>
+
+
+Message:<br> <textarea name=”ContactCommentt” rows=”6″ cols=”20″>
+
+
+</textarea><br><br> <input type=”submit” value=”Submit”> </form>
+
+</body>
+</html>

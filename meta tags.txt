@@ -1,0 +1,11 @@
+<meta name="description" content="A website that serves as a portfolio by Jessica Ilana Natelson Olsen.  It showcases her artwork and graphic designs, as well as gives examples of her work as a Web Designer.  It has a gallery and a "My Art" page.">
+
+<meta name="keywords" content="Art, Visuals, Visual Art, Fine Art, Art Gallery, Gallery, Portfolio,  Design, Graphic Design, Computer Graphics, Web Design, Photography, Examples.">
+
+<meta property="og:locale" content="en_ES">
+
+<meta property="og:type" content="Website">
+
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+
+<meta name="author" content="Jessica Ilana Natelson Olsen">

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Template Literals</h2>
+
+<p>Template literals allows variables in strings:</p>
+
+<p id="demo"></p>
+
+<p>Template literals are not supported in Internet Explorer.</p>
+
+<script>
+let header = "Templates Literals";
+let tags = ["template literals", "javascript", "es6"];
+
+let html = `<h2>${header}</h2><ul>`;
+
+for (const x of tags) {
+  html += `<li>${x}</li>`;
+}
+
+html += `</ul>`;
+document.getElementById("demo").innerHTML = html;
+</script>
+
+</body>
+</html>
+  
+
+RESULT:
+
+JavaScript Template Literals
+Template literals allows variables in strings:
+
+Templates Literals
+template literals
+javascript
+es6
+
+Template literals are not supported in Internet Explorer.
+
+
+THIS Code:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Sort</h2>
+<p>Sort the array in ascending order:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo1").innerHTML = points;  
+
+points.sort(function(a, b){return a - b});
+document.getElementById("demo2").innerHTML = points;
+</script>
+
+</body>
+</html>
+
+Produces this:
+
+JavaScript Array Sort
+Sort the array in ascending order:
+
+40,100,1,5,25,10
+
+1,5,10,25,40,100
+
+Use the same trick to sort an array descending:
+
+Example
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return b - a});
+
+This code produces html output displaying 2 buttons.  One says, "Sort Alphabetically," the other says,"Numerically.":
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Sort</h2>
+
+<p>Click the buttons to sort the array alphabetically or numerically.</p>
+
+<button onclick="myFunction1()">Sort Alphabetically</button>
+<button onclick="myFunction2()">Sort Numerically</button>
+
+<p id="demo"></p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;  
+
+function myFunction1() {
+  points.sort();
+  document.getElementById("demo").innerHTML = points;
+}
+function myFunction2() {
+  points.sort(function(a, b){return a - b});
+  document.getElementById("demo").innerHTML = points;
+}
+</script>
+
+</body>
+</html>
+
+This code sorts an array randomly:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Sort</h2>
+<p>Click the button (again and again) to sort the array in random order.</p>
+
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;  
+
+function myFunction() {
+  points.sort(function(a, b){return 0.5 - Math.random()});
+  document.getElementById("demo").innerHTML = points;
+}
+</script>
+
+</body>
+</html>
+
+The Fisher Yates Method
+The above example, array.sort(), is not accurate, it will favor some numbers over the others.
+
+The most popular correct method, is called the Fisher Yates shuffle, and was introduced in data science as early as 1938!
+
+In JavaScript the method can be translated to this:
+
+Example
+const points = [40, 100, 1, 5, 25, 10];
+
+for (let i = points.length -1; i > 0; i--) {
+  let j = Math.floor(Math.random() * i)
+  let k = points[i]
+  points[i] = points[j]
+  points[j] = k
+}
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Sort</h2>
+<h3>The Fisher Yates Method</h3>
+<p>Click the button (again and again) to sort the array in random order.</p>
+
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;  
+
+function myFunction() {
+  for (let i = points.length -1; i > 0; i--) {
+    let j = Math.floor(Math.random() * i)
+    let k = points[i]
+    points[i] = points[j]
+    points[j] = k
+  }
+  document.getElementById("demo").innerHTML = points;
+}
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+	  <style>
+		  header {
+			  align-content: center;
+			  text-align: center;
+			  
+		  }
+		  
+		  main {
+			  align-items: center;
+			  align-content: center;
+		  }
+	  
+	  </style>
+    <meta charset="UTF-8">
+	  <link rel="stylesheet" type="text/css" href="survey.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+	 <header>
+    <h1 id="title">User Survey</h1>
+    <p id="description">This is a survey for users of my website to gather demographic information and your opinion.</p></header>
+	  <main>
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" id="survey-form">
+  <label for="name" id="name-label" required>Full Name:</label><br>
+  <input type="text" id="name" name="name" placeholder="John Smith" required><br>
+  <label for="email" id="email-label">Email:</label><br>
+  <input type="email" id="email" name="email" placeholder="johnsmith@gmail.com" required><br><br>
+	<label for="number" id="number-label">Number:</label><br>	
+	<input type="number" id="number" name="number" placeholder="123-456-7899"
+  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+	<label for="dropdown" id="dropdown">Choose Which Language is Your Primary Language:</label>
+	<select id="dropdown" name="dropdown">
+    <option value="0">English</option>
+    <option value="0">Spanish</option>
+    <option value="0">French</option>
+    <option value="0">German</option>
+  </select><br>
+      <p>Please enter your race:</p>
+		<label for="radio">White</label>
+		<input type="radio" id="radio" name="race"><br>
+		<label for="radio2">Asian</label>
+		<input type="radio" id="radio2" name="race"><br>
+		<label for="radio3">Black</label>
+		<input type="radio" id="radio3" name="race"><br>
+		<label for="radio4">Caucasian</label>
+		<input type="radio" id="radio3" name="race"><br>
+		<p>How interested are you in the content of this Website?</p>
+		<label for="very">Very Interested</label>
+		<input type="checkbox" id="very" value="x"><br>
+		<label for="moderately" value="">Moderately Interested</label>
+		<input type="checkbox" id="moderately" value="x"><br>
+		<label for="not">Not at All</label>
+		<input type="checkbox" id="not" value="x"><br>
+      <p>Please enter your comments below:</p>
+		<textarea name="message" rows="10" cols="30">
+This is where you put comments you have.
+</textarea><br>
+   <button id="submit">
+  <input type="submit" value="Submit"></button>
+</form>
+	  
+
+  </main>  
+    
+    
+    
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
+
+
+
